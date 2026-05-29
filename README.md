@@ -25,7 +25,38 @@ Below is the complete configuration and interface of the Teachable Machine setup
   * **Headphones** (37 image samples captured)
   * **Cup** (30 image samples captured)
 * **Training block**: Shows that the model has successfully completed training.
-* **Preview & Prediction**: Shows real-time webcam validation and output confidence score bar chart (e.g., predicting **Book** with **89%** confidence).
+
+---
+
+## 🧪 Real-time Inference & Model Testing
+
+Below are screenshots of the model making live predictions based on camera input. This includes correct high-confidence predictions as well as an "Out-of-Distribution" test with an unseen object (a green bottle):
+
+<table border="0">
+  <tr>
+    <td width="50%" align="center">
+      <b>Class: Headphones (100% Confidence)</b><br>
+      <img src="screenshots/inference_headphones.png" alt="Inference Headphones" width="100%"/>
+    </td>
+    <td width="50%" align="center">
+      <b>Class: Cup (99% Confidence)</b><br>
+      <img src="screenshots/inference_cup.png" alt="Inference Cup" width="100%"/>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <b>Class: Book (100% Confidence)</b><br>
+      <img src="screenshots/inference_book.png" alt="Inference Book" width="100%"/>
+    </td>
+    <td width="50%" align="center">
+      <b>Out-of-Distribution Test (Green Bottle)</b><br>
+      <img src="screenshots/inference_unknown.png" alt="Out of Distribution Test" width="100%"/>
+    </td>
+  </tr>
+</table>
+
+> [!TIP]
+> **Out-of-Distribution Test**: When presented with a green spray bottle (an object not defined in any of the training classes), the model demonstrates how it distributes prediction confidence across the known classes (Cup: 66%, Headphones: 18%, Book: 16%).
 
 ---
 
