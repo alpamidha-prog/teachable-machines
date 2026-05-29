@@ -1,6 +1,6 @@
 # Unsupervised Learning
 
-An interactive image classification project powered by **Google's Teachable Machine**. This model classifies real-time video input into three categories: **Books**, **Headphones**, and **Cups**. 
+An interactive image classification project powered by **Google's Teachable Machine**. This model classifies real-time video input into three categories: **Book**, **Headphones**, and **Cup**.
 
 > [!NOTE]
 > While Teachable Machine uses **Supervised Learning** under the hood (since classes are defined and trained with explicit labels), this repository serves as a practical demonstration and is cataloged under the course module **Unsupervised Learning / AI in Practice**.
@@ -11,92 +11,21 @@ Access and test the live trained model directly in your browser:
 
 ---
 
-## 📸 Project Screenshots & Training Process
+## 📸 Teachable Machine Setup & Model Training Interface
 
-Here is the step-by-step workflow of training, testing, and exporting the image classifier:
+Below is the complete configuration and interface of the Teachable Machine setup, demonstrating the defined classes, trained model status, and live output prediction:
 
-### 1. Data Collection & Class Definition
-We defined three distinct classes for classification and captured image samples using the webcam.
+<p align="center">
+  <img src="screenshots/teachable_machine_setup.png" alt="Teachable Machine Setup & Training" width="100%" />
+</p>
 
-<table border="0">
-  <tr>
-    <td width="33.3%" align="center">
-      <b>Class 1: Book</b><br>
-      <img src="screenshots/screenshot_01.png" alt="Class 1: Book" width="100%"/>
-    </td>
-    <td width="33.3%" align="center">
-      <b>Class 2: Headphones</b><br>
-      <img src="screenshots/screenshot_02.png" alt="Class 2: Headphones" width="100%"/>
-    </td>
-    <td width="33.3%" align="center">
-      <b>Class 3: Cup</b><br>
-      <img src="screenshots/screenshot_03.png" alt="Class 3: Cup" width="100%"/>
-    </td>
-  </tr>
-</table>
-
----
-
-### 2. Model Training & Parameter Setup
-Configuring training epochs, batch size, and learning rate, then running the training process in the browser.
-
-<table border="0">
-  <tr>
-    <td width="50%" align="center">
-      <b>Training Progress</b><br>
-      <img src="screenshots/screenshot_04.png" alt="Training Progress" width="100%"/>
-    </td>
-    <td width="50%" align="center">
-      <b>Advanced Training Metrics</b><br>
-      <img src="screenshots/screenshot_05.png" alt="Training Metrics" width="100%"/>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center">
-      <b>Epochs & Loss Graphs</b><br>
-      <img src="screenshots/screenshot_06.png" alt="Epochs & Loss" width="100%"/>
-    </td>
-    <td width="50%" align="center">
-      <b>Accuracy Graph</b><br>
-      <img src="screenshots/screenshot_07.png" alt="Accuracy Graph" width="100%"/>
-    </td>
-  </tr>
-</table>
-
----
-
-### 3. Model Inference & Real-time Predictions
-The model in action, predicting web-camera inputs with confidence scores.
-
-<table border="0">
-  <tr>
-    <td width="33.3%" align="center">
-      <b>Detecting Book (100%)</b><br>
-      <img src="screenshots/screenshot_08.png" alt="Detecting Book" width="100%"/>
-    </td>
-    <td width="33.3%" align="center">
-      <b>Detecting Headphones (100%)</b><br>
-      <img src="screenshots/screenshot_09.png" alt="Detecting Headphones" width="100%"/>
-    </td>
-    <td width="33.3%" align="center">
-      <b>Detecting Cup (100%)</b><br>
-      <img src="screenshots/screenshot_10.png" alt="Detecting Cup" width="100%"/>
-    </td>
-  </tr>
-  <tr>
-    <td width="33.3%" align="center">
-      <b>Webcam Active Preview</b><br>
-      <img src="screenshots/screenshot_11.png" alt="Active Preview" width="100%"/>
-    </td>
-    <td width="33.3%" align="center">
-      <b>Confidence Score Output</b><br>
-      <img src="screenshots/screenshot_12.png" alt="Confidence Output" width="100%"/>
-    </td>
-    <td width="33.3%" align="center">
-      <!-- Empty placeholder for alignment -->
-    </td>
-  </tr>
-</table>
+### Key Interface Highlights:
+* **Classes Configured**: 
+  * **Book** (30 image samples captured)
+  * **Headphones** (37 image samples captured)
+  * **Cup** (30 image samples captured)
+* **Training block**: Shows that the model has successfully completed training.
+* **Preview & Prediction**: Shows real-time webcam validation and output confidence score bar chart (e.g., predicting **Book** with **89%** confidence).
 
 ---
 
